@@ -1,0 +1,135 @@
+{% extends 'base.html' %}  
+{% block content %}
+
+<div class="container-fluid content col-12 col-md-12">
+    {% if story == "story" %}
+    <h1>Simple Story</h1>
+    <form class="form-group col-lg-6" action="/answer/story">
+
+        <div>
+            <label for="verb">Enter a verb: </label>
+            <input class="form-control" id="verb" type="text" name="verb">
+        </div>
+        <div>
+            <label for="noun">Enter a noun: </label>
+            <input class="form-control"  id="noun" type="text" name="noun">
+        </div>
+        <div>
+            <label for="place">Enter a place: </label>
+            <input class="form-control"  id="place" type="text" name="place">
+        </div>
+        <div>
+            <label for="adjective">Enter an adjective: </label>
+            <input class="form-control"  id="adjective" type="text" name="adjective">
+        </div>
+        <div> 
+            <label for="plural_noun">Enter a plural noun: </label>
+            <input class="form-control" id="plural_noun" type="text" name="plural_noun">
+        </div>
+        <div> 
+            <button class="btn btn-outline-dark mt-2">Submit!</button>
+        </div>         
+    </form>
+    {%  endif %}
+
+    {% if story == "story_2" %}
+    <h1>Riske Story</h1>
+    <form class="form-group col-lg-6" action="/answer/story_2">
+        <div>
+            <label for="exclamation">Enter an exclamation: </label>
+            <input class="form-control" id="exclamation" type="text" name="exclamation">
+        </div>
+        <div>
+            <label for="adverb">Enter an adverb: </label>
+            <input class="form-control" id="adverb" type="text" name="adverb">
+        </div>
+        <div>
+            <label for="noun">Enter a noun: </label>
+            <input class="form-control" id="noun" type="text" name="noun">
+        </div>
+        <div>
+            <label for="adjective">Enter an adjective: </label>
+            <input class="form-control" id="adjective" type="text" name="adjective">
+        </div>
+   
+        <div> 
+            <button class="btn btn-outline-dark mt-2">Submit!</button>
+        </div>         
+    </form>
+    {%  endif %}
+
+    {% if story == "story_3" %}
+    <h1>Unicorn Story</h1>
+    <form class="form-group col-lg-6" action="/answer/story_3">
+        <div>      
+            <label for="plural_noun">Enter a plural noun: </label>
+            <input class="form-control" id="plural_noun" type="text" name="plural_noun">
+        </div>
+        <div>
+            <label for="adjective">Enter an adjective: </label>
+            <input class="form-control" id="adjective" type="text" name="adjective">
+        </div>
+        <div>      
+            <label for="plural_animal">Enter a plural animal: </label>
+            <input class="form-control" id="plural_animal" type="text" name="plural_animal">
+        </div>
+        <div>      
+            <label for="plural_noun1">Enter a plural noun: </label>
+            <input class="form-control" id="plural_noun1" type="text" name="plural_noun1">
+        </div>
+        <div>
+            <label for="adjective1">Enter an adjective: </label>
+            <input class="form-control" id="adjective1" type="text" name="adjective1">
+        </div>
+        <div>
+            <label for="color">Enter an color: </label>
+            <input class="form-control" id="color" type="text" name="color">
+        </div>
+        <div>
+            <label for="adjective2">Enter an adjective: </label>
+            <input class="form-control" id="adjective2" type="text" name="adjective2">
+        </div>
+        <div>
+            <label for="noun">Enter a noun: </label>
+            <input class="form-control" id="noun" type="text" name="noun">
+        </div>
+        <div>      
+            <label for="plural_noun2">Enter a plural noun: </label>
+            <input class="form-control" id="plural_noun2" type="text" name="plural_noun2">
+        </div>
+        <div>
+            <label for="adjective3">Enter an adjective: </label>
+            <input class="form-control" id="adjective3" type="text" name="adjective3">
+        </div>
+        <div>
+            <label for="verb">Enter a verb: </label>
+            <input class="form-control" id="verb" type="text" name="verb">
+        </div>
+        <div>      
+            <label for="plural_noun3">Enter a plural noun: </label>
+            <input class="form-control" id="plural_noun3" type="text" name="plural_noun3">
+        </div>
+        <div>
+            <label for="verb_ed">Enter a verb (past - ed): </label>
+            <input class="form-control" id="verb_ed" type="text" name="verb_ed">
+        </div>
+        <div>
+            <label for="verb1">Enter a verb: </label>
+            <input class="form-control" id="verb1" type="text" name="verb1">
+        </div>
+        <div>
+            <label for="noun1">Enter a noun: </label>
+            <input class="form-control" id="noun1" type="text" name="noun1">
+        </div>
+        <div>
+            <label for="adjective4">Enter an adjective: </label>
+            <input class="form-control" id="adjective4" type="text" name="adjective4">
+        </div>
+        <div> 
+            <button class="btn btn-outline-dark mt-2">Submit!</button>
+        </div>         
+    </form>
+    {%  endif %}
+</div>
+
+{% endblock %}

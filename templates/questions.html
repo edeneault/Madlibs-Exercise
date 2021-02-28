@@ -1,0 +1,35 @@
+{% extends 'base.html'  %}  
+{% block content %}
+  
+    <div class="container content">
+        <h1>Madlibs FORM</h1>
+        <form action="/answer">
+    
+            <div>
+                <label for="verb">Enter a verb: </label>
+                <input id="verb" type="text" name="verb">
+            </div>
+            <div>
+                <label for="noun">Enter a noun: </label>
+                <input id="noun" type="text" name="noun">
+            </div>
+            <div>
+                <label for="place">Enter a place: </label>
+                <input id="place" type="text" name="place">
+            </div>
+            <div>
+                <label for="adjective">Enter an adjective: </label>
+                <input id="adjective" type="text" name="adjective">
+            </div>
+            <div>
+                
+                <label for="plural_noun">Enter a plural noun: </label>
+                <input id="plural_noun" type="text" name="plural_noun">
+            </div>
+            <div> 
+                <button>Submit!</button>
+            </div>         
+        </form>
+    </div>
+
+    {% endblock %}

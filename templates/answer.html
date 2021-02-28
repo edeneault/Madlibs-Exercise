@@ -1,0 +1,10 @@
+
+{% extends 'base.html'  %}  
+{% block content %}
+<div class="container-fluid col-12 col-md-12">
+    {% if text %}
+    <h3>Here is your MadLib Story:</h3>
+    <p>{{text}}</p>
+    {%  endif %}
+</div>
+{% endblock %}
