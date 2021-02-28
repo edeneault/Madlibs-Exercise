@@ -16,12 +16,13 @@ def home():
 
 @app.route('/form')
 def form():
-    """Return homepage."""
+    """Return Selected Form."""
     stories = request.args.get("story")
     return render_template("form.html", story=stories)
 
 @app.route('/answer/<stories>')
 def answer(stories):
+    """Return Answer to Selected Story """
     print(stories)
     story = STORIES[stories]
     text = story.generate(request.args)

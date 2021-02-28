@@ -1,7 +1,7 @@
 {% extends 'base.html' %}  
 {% block content %}
 
-<div class="container-fluid content col-12 col-md-12">
+<div class="container-fluid content text-white col-12 col-md-8 mt-3">
     {% if story == "story" %}
     <h1>Simple Story</h1>
     <form class="form-group col-lg-6" action="/answer/story">
@@ -27,7 +27,7 @@
             <input class="form-control" id="plural_noun" type="text" name="plural_noun">
         </div>
         <div> 
-            <button class="btn btn-outline-dark mt-2">Submit!</button>
+            <button class="btn btn-light mt-2">Submit!</button>
         </div>         
     </form>
     {%  endif %}
@@ -36,7 +36,7 @@
     <h1>Riske Story</h1>
     <form class="form-group col-lg-6" action="/answer/story_2">
         <div>
-            <label for="exclamation">Enter an exclamation: </label>
+            <label for="exclamation">Enter an exclamation (like: "Oh or Ouch or Ouff"): </label>
             <input class="form-control" id="exclamation" type="text" name="exclamation">
         </div>
         <div>
@@ -53,7 +53,7 @@
         </div>
    
         <div> 
-            <button class="btn btn-outline-dark mt-2">Submit!</button>
+            <button class="btn btn-light mt-2">Submit!</button>
         </div>         
     </form>
     {%  endif %}
@@ -126,7 +126,7 @@
             <input class="form-control" id="adjective4" type="text" name="adjective4">
         </div>
         <div> 
-            <button class="btn btn-outline-dark mt-2">Submit!</button>
+            <button class="btn btn-light mt-2">Submit!</button>
         </div>         
     </form>
     {%  endif %}

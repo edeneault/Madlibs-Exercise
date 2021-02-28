@@ -59,18 +59,13 @@ story_3 = Story([
 )
 
 
-story_list = [story, story_2, story_3]
-
-
-
-
 
 ans = {"verb": "eat", "noun": "mango", "place": "universe", "adjective": "luscious", "plural_noun": "other mangoes" }
 ans_2 = {"exclamation": "Ouch", "adverb": "accidentaly", "noun": "car", "adjective": "beautiful"}
 ans_3 = {"plural_noun": "fairies", "adjective": "blue", "plural_animal": "horses", "plural_noun1": "carrots", "adjective1": "small",
         "color": "brown", "adjective2": "huge", "noun": "bread", "plural_noun2": "dumps", "adjective3": "pink", "verb": "fart",
         "plural_noun3": "patatoes", "verb_ed": "pooped", "verb1": "dump", "noun1": "toilet", "adjective4": "shine"}
-print(ans_2)
-print(story_2.generate(ans_2))
-print(story_3.generate(ans_3))
-print (story_list)
+# print(ans_2)
+# print(story_2.generate(ans_2))
+# print(story_3.generate(ans_3))
+# print (story_list)
